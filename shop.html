@@ -366,7 +366,7 @@
                     <i class="fas fa-shopping-cart"></i>
                     <span class="cart-count" id="cartCount">0</span>
                 </a></li>
-                <li><a href="account.html">Account</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -375,7 +375,7 @@
         <div class="hero">
             <h1>Premium Dry Fruits & Nuts</h1>
             <p>Discover our carefully selected range of nutritious and delicious dry fruits and nuts from around the world.</p>
-            <a href="#products" class="btn">Shop Now</a>
+            <!-- <a href="#products" class="btn">Shop Now</a> -->
         </div>
         
         <div class="filters">
@@ -633,7 +633,9 @@
             card.className = 'product-card';
             
             card.innerHTML = `
-                <img src="${product.image}" alt="${product.name}" class="product-image">
+                <a href="product-detail.html?id=${product.id}">
+                    <img src="${product.image}" alt="${product.name}" class="product-image">
+                </a>
                 ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
                 <div class="product-details">
                     <div class="product-category">${product.category}</div>
