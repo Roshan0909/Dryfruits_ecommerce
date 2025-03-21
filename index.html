@@ -24,6 +24,8 @@
     }
     .product-card {
       background-color: #D7CCC8;
+      width: 800px;
+      height: auto;
     }
   </style>
 </head>
@@ -39,8 +41,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
           <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
         </ul>
@@ -58,9 +58,25 @@
     <div class="container">
       <h2 class="text-center mb-4">Featured Products</h2>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-12 d-flex justify-content-center" style="gap: 20px;">
           <div class="card product-card p-3">
-            <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Almonds">
+            <img src="media/image.png" class="card-img-top" alt="Almonds">
+            <div class="card-body">
+              <h5 class="card-title">Almonds</h5>
+              <p class="card-text">Rich in protein and nutrients. 500g - $10</p>
+              <a href="product-detail.html" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card product-card p-3">
+            <img src="media/image.png" class="card-img-top" alt="Almonds">
+            <div class="card-body">
+              <h5 class="card-title">Almonds</h5>
+              <p class="card-text">Rich in protein and nutrients. 500g - $10</p>
+              <a href="product-detail.html" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card product-card p-3">
+            <img src="media/image.png" class="card-img-top" alt="Almonds">
             <div class="card-body">
               <h5 class="card-title">Almonds</h5>
               <p class="card-text">Rich in protein and nutrients. 500g - $10</p>
