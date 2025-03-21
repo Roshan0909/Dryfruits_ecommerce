@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - DryFruitsMart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #FFF8E1;
+      color: #5D4037;
+    }
+
+    .navbar {
+      background-color: #5D4037;
+    }
+
+    .navbar a {
+      color: #FFF8E1 !important;
+    }
+
+    .table th, .table td {
+      vertical-align: middle;
+    }
+
+    .total-box {
+      background-color: #D7CCC8;
+      padding: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">DryFruitsMart</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Checkout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Content -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Your Cart</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Premium Almonds</td>
+                <td><input type="number" value="1" class="form-control w-50"></td>
+                <td>$10</td>
+                <td>$10</td>
+                <td><button class="btn btn-sm btn-danger">Remove</button></td>
+              </tr>
+              <tr>
+                <td>Roasted Cashews</td>
+                <td><input type="number" value="2" class="form-control w-50"></td>
+                <td>$12</td>
+                <td>$24</td>
+                <td><button class="btn btn-sm btn-danger">Remove</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <div class="total-box">
+            <h5>Order Summary</h5>
+            <p>Subtotal: $34</p>
+            <p>Shipping: $5</p>
+            <hr>
+            <h5>Total: $39</h5>
+            <a href="#" class="btn btn-dark w-100 mt-3">Proceed to Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

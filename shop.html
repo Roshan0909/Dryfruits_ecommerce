@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - DryFruitsMart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #FFF8E1;
+      color: #5D4037;
+    }
+
+    .navbar {
+      background-color: #5D4037;
+    }
+
+    .navbar a {
+      color: #FFF8E1 !important;
+    }
+
+    .product-card {
+      background-color: #D7CCC8;
+    }
+
+    .filter-sidebar {
+      background-color: #EFEBE9;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">DryFruitsMart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Shop Page Content -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Shop All Dry Fruits</h2>
+      <div class="row">
+        <!-- Filters Sidebar -->
+        <div class="col-md-3">
+          <div class="filter-sidebar">
+            <h5>Filters</h5>
+            <div class="mb-2">
+              <label class="form-label">Category</label>
+              <select class="form-select">
+                <option>All</option>
+                <option>Almonds</option>
+                <option>Cashews</option>
+                <option>Pistachios</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Sort By</label>
+              <select class="form-select">
+                <option>Default</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product List -->
+        <div class="col-md-9">
+          <div class="row g-4">
+            <!-- Product Item -->
+            <div class="col-md-4">
+              <div class="card product-card p-2">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Almonds">
+                <div class="card-body">
+                  <h5 class="card-title">Premium Almonds</h5>
+                  <p class="card-text">$10 - 500g</p>
+                  <a href="#" class="btn btn-outline-dark btn-sm">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- More products repeated -->
+            <div class="col-md-4">
+              <div class="card product-card p-2">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Cashews">
+                <div class="card-body">
+                  <h5 class="card-title">Roasted Cashews</h5>
+                  <p class="card-text">$12 - 500g</p>
+                  <a href="#" class="btn btn-outline-dark btn-sm">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card product-card p-2">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Pistachios">
+                <div class="card-body">
+                  <h5 class="card-title">Salted Pistachios</h5>
+                  <p class="card-text">$15 - 500g</p>
+                  <a href="#" class="btn btn-outline-dark btn-sm">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more products as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
